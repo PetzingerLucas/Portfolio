@@ -79,6 +79,7 @@ class AboutNav extends Component {
                 alignItems: 'flex-start' } }
             >
               <p>Html, CSS, JS, React</p>
+              <p>Redux</p>
               <p>React Testing Library</p>
               <p>Agile methodology</p>
             </div>)
@@ -90,7 +91,30 @@ class AboutNav extends Component {
                 flexDirection: 'column',
                 alignItems: 'flex-start' } }
             >
-              <p>Full Stack Web Development - Trybe 09/22</p>
+              <p>
+                {' '}
+                <strong> Full Stack Web Development </strong>
+                {' '}
+                - Trybe 2022
+              </p>
+              <p>
+                {' '}
+                <strong> Game Development  </strong>
+                {' '}
+                - Unicuritiba 2019
+              </p>
+              <p>
+                {' '}
+                <strong> Computer Engineering </strong>
+                {' '}
+                - UNISO 2016
+              </p>
+              <p>
+                {' '}
+                <strong> Assistant Manager </strong>
+                {' '}
+                - CIEE  2014
+              </p>
             </div>)
         }
         {
@@ -100,7 +124,11 @@ class AboutNav extends Component {
                 flexDirection: 'column',
                 alignItems: 'flex-start' } }
             >
+              <p>Web Development Student</p>
               <p>TI Analist</p>
+              <p>Marketing Assistant</p>
+              <p>Financial Assistant </p>
+              <p>Manager Assistant</p>
             </div>)
         }
 
