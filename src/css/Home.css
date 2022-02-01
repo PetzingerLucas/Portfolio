@@ -1,0 +1,36 @@
+.home {
+  justify-content: center;
+
+
+}
+
+.home span {
+  font-size: 25px;
+}
+
+.home h1 {
+  font-size: 60px;
+}
+
+.home div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0 auto;
+}
+
+.currentTitle {
+  animation: slide linear 2.5s infinite backwards;
+  animation-delay: unset;
+  color: #f9004d;
+  height: 20vh;
+  opacity: 1;
+  transition: all 1s;
+}
+
+@keyframes slide {
+
+  0%, 10% { opacity: 0;}
+
+  90%, 100% { opacity: 1;}
+}

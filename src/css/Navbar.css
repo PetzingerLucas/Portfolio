@@ -1,0 +1,20 @@
+.header__navbar {
+  align-content: flex-end;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.header__navbar a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.header__navbar a:hover {
+  color: #f9004d;
+}

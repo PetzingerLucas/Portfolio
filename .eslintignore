@@ -1,0 +1,6 @@
+**/*.test.js
+src/tests/*
+src/index.js
+src/reportWebVitals.js
+node_modules
+/public/index.html

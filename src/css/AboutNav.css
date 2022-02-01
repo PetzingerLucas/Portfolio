@@ -1,0 +1,18 @@
+.about__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.about__nav a:hover {
+  color: #f9004d;
+  cursor: pointer;
+}
+

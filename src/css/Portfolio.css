@@ -1,0 +1,55 @@
+.portfolio__card {
+  background-color: #191919;
+  border-radius: 1rem;
+  height: 50%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  padding-bottom: 1%;
+  transition: all 0.5s;
+  width: 25%;
+
+
+}
+
+.portfolio__card a {
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio__card:hover {
+  background-color: #f9004d;
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.portfolio__card img {
+  border-radius: 1rem;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  z-index: -2;
+}
+
+.portfolio__card svg:nth-child( 1 ) {
+  animation: rotate 5s  infinite linear;
+  color: #61dbfb;
+  font-size: 3vh;
+  padding: 0.5rem;
+}
+
+.portfolio__card svg:nth-child( 2 ) {
+  color: #f0db4f;
+  font-size: 3vh;
+  padding: 0.5rem;
+}
+
+.portfolio__card svg:nth-child( 3 ) {
+  color: #3c99dc;
+  font-size: 3vh;
+  padding: 0.5rem;
+}
+
+@keyframes rotate {
+
+  to { transform: rotate(360deg);}
+}

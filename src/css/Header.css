@@ -1,0 +1,38 @@
+.app__header {
+  display: flex;
+  grid-row: 1;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.nav-colored {
+  background-color: #191919;
+}
+
+.header__social_links {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 1.5rem;
+}
+
+.header__social_links li {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.header__social_links svg {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.25s;
+}
+
+.header__social_links svg:hover {
+  color: #f9004d;
+}
