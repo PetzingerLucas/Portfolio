@@ -19,18 +19,21 @@
   margin-right: 0 auto;
 }
 
-.currentTitle {
-  animation: slide linear 2.5s infinite backwards;
-  animation-delay: unset;
+.currentTitle1 {
   color: #f9004d;
   height: 20vh;
-  opacity: 1;
-  transition: all 1s;
+  opacity: 0;
+}
+
+.currentTitle2 {
+  animation: slide linear 4s;
 }
 
 @keyframes slide {
 
-  0%, 10% { opacity: 0;}
+  0% { opacity: 0;}
 
-  90%, 100% { opacity: 1;}
+  50% { opacity: 1;}
+
+  75% { opacity: 1;}
 }

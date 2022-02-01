@@ -1,36 +1,28 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import React, { Component } from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import '../css/Home.css';
 
+const currentPharse = ['Front End Developer', 'Full Stack Development Student'];
 class Home extends Component {
   constructor() {
-    const DEFAULT_TITLE = 'Front End Developer';
     super();
     this.state = {
-      currentTitle: DEFAULT_TITLE,
+      change: true,
+      index: 0,
     };
   }
 
-  componentDidMount() {
-    const ANIMATION_TIME = 2500;
-    setInterval(this.setTitle, ANIMATION_TIME);
-  }
-
-  componentDidUpdate() {
-  }
-
 setTitle = () => {
-  const DEFAULT_TITLE = 'Front End Developer';
-  const { currentTitle } = this.state;
-  if (currentTitle === DEFAULT_TITLE) {
-    this.setState({ currentTitle: 'Full Stack Development Student' });
-  } if (currentTitle === 'Full Stack Development Student') {
-    this.setState({ currentTitle: DEFAULT_TITLE });
-  }
+  this.setState((state) => ({
+    change: true,
+    index: (state.index + 1) % 2,
+
+  }));
 }
 
 render() {
-  const { currentTitle } = this.state;
+  const { change, index } = this.state;
   return (
     <div id="home" className="home__page home">
       <div>
@@ -38,8 +30,15 @@ render() {
         <h1 style={ { width: '100%' } }>
           Hi, I’m Lucas Petzinger
         </h1>
-        <h1 className="currentTitle">
-          {currentTitle}
+        <h1
+          onAnimationEnd={ () => {
+            const ml = 250;
+            this.setState({ change: false });
+            setTimeout(() => { this.setTitle(); }, ml);
+          } }
+          className={ ` currentTitle1 ${change && 'currentTitle2'}` }
+        >
+          {currentPharse[index]}
         </h1>
         <h1
           style={ { width: '100%' } }
